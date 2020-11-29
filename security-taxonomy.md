@@ -24,8 +24,6 @@ Software engineering defends integrity against accidental interference, *bugs*. 
 
 ![Nested shapes as boundaries, with boundary-crossing arrows as channelsNested shapes as boundaries, with boundary-crossing arrows as channels](images/boundaries-channels-cropped.png)
 
-<center>Nested boundaries and channels</center><br>
-
 [Some people claim](https://mobile.twitter.com/domenic/status/1298045341858660352) that security boundaries should only align with process boundaries, as no other boundaries are defensible. They say we should build good process separation, but not build boundary mechanisms within a process because [process boundaries are enough](https://github.com/w3ctag/design-reviews/issues/542#issuecomment-728276606). This is like saying that because the walls of your house are a defensible perimeter, you do not need skin. Because you have skin, you do not need cell membranes.
 
 Of course biology does not work this way. Instead, we ourselves are composed of systems at multiple nested granularities: organelles, cells, organs, organisms, hives. Likewise we ourselves compose software systems at multiple nested granularities: closures, classes, modules, packages, realms, workers. In both biological and software systems, at each granularity, to gain the benefits of composition, defensible boundaries reduce potential interference. Defending boundaries at multiple scales simultaneously produces a [multiplicative reduction in risk](https://www.youtube.com/watch?v=g28yRvHKIgc&list=PLKr-mvz8uvUgybLg53lgXSeLOp4BiwvB2). Different boundaries have different characteristics, but they have many abstract organizational principles in common.
