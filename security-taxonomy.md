@@ -22,7 +22,7 @@ Software engineering defends integrity against accidental interference, *bugs*. 
 
 ## Boundaries, Channels, Nested Granularities
 
-![Nested shapes as boundaries, with boundary-crossing arrows as channelsNested shapes as boundaries, with boundary-crossing arrows as channels](images/boundaries-channels-cropped.png)
+<img alt="Nested shapes as boundaries, with boundary-crossing arrows as channelsNested shapes as boundaries, with boundary-crossing arrows as channels" src="images/boundaries-channels-cropped.png" width="50%" height="50%">
 
 [Some people claim](https://mobile.twitter.com/domenic/status/1298045341858660352) that security boundaries should only align with process boundaries, as no other boundaries are defensible. They say we should build good process separation, but not build boundary mechanisms within a process because [process boundaries are enough](https://github.com/w3ctag/design-reviews/issues/542#issuecomment-728276606). This is like saying that because the walls of your house are a defensible perimeter, you do not need skin. Because you have skin, you do not need cell membranes.
 
