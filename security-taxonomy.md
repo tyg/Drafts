@@ -84,7 +84,7 @@ Many security discussion use the terms "trusted code" and "untrusted code", as i
 
 Of our various software engineering granularities, the one most relevant to JavaScript supply-chain vulnerabilities is the package, as that is the clearest unit of separate authorship and revision. Different packages are distrusted differently, to different degrees and in different ways. How realistic is it to place each package into its own process and do all inter-package linkage via inter-process communication? For anyone who has done any programming, the answer is clear. By contrast, experiments at Google, Salesforce, Node, MetaMask, and Agoric show that many existing JavaScript packages, not written to run under SES, nevertheless do run compatibly under SES, realistically limiting the damage each package might do to the others.
 
-## Building out to Large-scale Boundaries
+## Building out to Large-scale Boundaries and Channels
 
 Starting with [EcmaScript 5](https://www.youtube.com/watch?v=Kq4FpMe6cRs&list=PLKr-mvz8uvUg70w0yKGfytaDqxiIBNo_L), JavaScript has gotten much more secure and much better at supporting [large scale software engineering](https://www.youtube.com/watch?v=9WdbTucMaRo&list=PLzDw4TTug5O3vIAd4IR1Gp5t_46co_dv9), largely through the same mechanisms introduced for "both" purposes--repaired scoping and encapsulation, promises, proxies, weakmaps, classes with private fields, tagged template literals, separated modules, and more. These mechanisms serve the same abstract goal, to enable more effective composition by minimizing the hazards of destructive interference.
 
